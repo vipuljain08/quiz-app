@@ -58,14 +58,14 @@ loadQuiz();
 
 let timeleft = 10;
 let countdownTimer = setInterval(function () {
-    if(timeleft <= 0 && currentQuestion == quizData.length-1) {
-        clearInterval(countdownTimer)
-        return wrapperEl.innerHTML = `<h2 class="over">You have scored ${currentScore}/${quizData.length}</h2><button onclick="location.reload()">Reload</button>`
+    if (timeleft <= 0 && currentQuestion == quizData.length - 1) {
+        clearInterval(countdownTimer);
+        return (wrapperEl.innerHTML = `<h2 class="over">You have scored ${currentScore}/${quizData.length}</h2><button onclick="location.reload()">Reload</button>`);
     }
-    if (timeleft <= 0 && currentQuestion < quizData.length-1) {
-        currentQuestion += 1
-        loadQuiz()
-        timeleft = 10
+    if (timeleft <= 0 && currentQuestion < quizData.length - 1) {
+        currentQuestion += 1;
+        loadQuiz();
+        timeleft = 10;
     }
     timerEl.innerText = timeleft;
     timeleft -= 1;
@@ -106,7 +106,7 @@ submitBtn.addEventListener("click", () => {
         if (currentQuestion < quizData.length) {
             loadQuiz();
         } else {
-            clearInterval(countdownTimer)
+            clearInterval(countdownTimer);
             wrapperEl.innerHTML = `<h2 class="over">You have scored ${currentScore}/${quizData.length}</h2><button onclick="location.reload()">Reload</button>`;
         }
     }
