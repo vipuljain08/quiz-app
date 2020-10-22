@@ -1,3 +1,4 @@
-## Quiz App built with JavaScript
+## [Countdown Timer](https://vipuljain08.github.io/quiz-app/)
 <hr>
-quiz app with timer.
+
+Quiz App built with JavaScript
