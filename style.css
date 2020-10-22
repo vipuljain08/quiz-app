@@ -95,3 +95,32 @@ button {
   cursor: pointer;
   outline: none;
 }
+
+.circle {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #c360f1;
+  opacity: 0.4;
+  z-index: -99;
+}
+
+.ex__large {
+  top: 4rem; right: 16rem;
+  width: 200px; height: 200px;
+}
+.large {
+  top: 25rem; left: 8rem;
+  width: 160px; height: 160px;
+}
+.medium {
+  top: 5rem; left: 6rem;
+  width: 120px; height: 120px;
+}
+.small {
+  top: 28rem; right: 13rem;
+  width: 60px; height: 60px;
+}
+.ex__small {
+  top: 5rem; right: 45rem;
+  width: 30px; height: 30px;
+}
